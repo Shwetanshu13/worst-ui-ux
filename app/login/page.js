@@ -181,6 +181,13 @@ export default function LoginPage() {
                 >
                     Login (Good Luck! 😏)
                 </button>
+
+                {/* Subtle credentials hint */}
+                <div className="mt-4 text-center">
+                    <p className="text-xs text-gray-400 italic">
+                        psst... u:upvision p:nitdelhi
+                    </p>
+                </div>
             </div>
         </div>
     );
