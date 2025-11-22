@@ -38,8 +38,8 @@ export default function LoadingPage() {
             const newPumpY = Math.max(-30, Math.min(30, pumpY - deltaY * 0.5));
             setPumpY(newPumpY);
 
-            // Increase progress based on movement (reduced efficiency)
-            const progressIncrease = Math.abs(deltaY) * 0.08;
+            // Increase progress based on movement (extremely reduced efficiency - needs 20+ pumps)
+            const progressIncrease = Math.abs(deltaY) * 0.04;
             setProgress(prev => Math.min(100, prev + progressIncrease));
 
             setLastY(currentY);
